@@ -1,0 +1,9 @@
+{
+  "name": "kritb-firebase",
+  "version": "1.0.0",
+  "description": "My personal webblog",
+  "main": "index.js",
+  "repository": "https://github.com/zestzero/kritb-firebase.git",
+  "author": "zestzero <gmkipladen@gmail.com>",
+  "license": "MIT"
+}
