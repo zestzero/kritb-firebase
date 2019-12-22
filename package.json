@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/zestzero/kritb-firebase.git",
   "author": "zestzero <gmkipladen@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "deploy:host": "firebase deploy --only hosting"
+  }
 }
