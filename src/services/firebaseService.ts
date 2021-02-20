@@ -20,6 +20,9 @@ class FirebaseService implements IFirebaseService {
 
     public constructor() {
         if (!firebase.apps.length) {
+            if (!this.config.apiKey) {
+                console.error("You need to provide api key from environment variable");
+            }
             firebase.initializeApp(this.config);
         }
         this.database = firebase.database();

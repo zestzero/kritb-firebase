@@ -12,7 +12,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "function": "nextServer"
       }
     ]
   },
@@ -41,6 +41,8 @@
     "indexes": "firestore.indexes.json"
   },
   "functions": {
+    "source": ".",
+    "runtime": "nodejs10",
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
