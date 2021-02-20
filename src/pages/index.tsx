@@ -1,8 +1,8 @@
 import React from "react";
-import App from "../src/App";
-import reportWebVitals from '../src/reportWebVitals';
+import App from "../App";
+import reportWebVitals from '../reportWebVitals';
 
-const Index = ({ sample }) => {
+const Index = () => {
   return (
     <React.StrictMode>
     <App />
