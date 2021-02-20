@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -44,8 +44,7 @@
     "source": ".",
     "runtime": "nodejs10",
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint",
-      "npm --prefix \"$RESOURCE_DIR\" run build"
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   }
 }

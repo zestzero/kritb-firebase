@@ -89,7 +89,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "test": "node scripts/test.js",
     "lint": "eslint --ext .js,.ts .",
