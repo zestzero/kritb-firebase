@@ -1,0 +1,11 @@
+.box {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: solid 1px #999;
+
+  &.primary { background-color: var(--color-primary); }
+  &.secondary { background-color: var(--color-secondary); }
+  &.black { background-color: var(--color-black); }
+  &.additional { background-color: var(--color-additional); }
+}

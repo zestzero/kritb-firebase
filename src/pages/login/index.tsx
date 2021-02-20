@@ -1,19 +1,19 @@
 import Layout from "components/Layout/Layout";
+import LoginPage from "containers/LoginPage/LoginPage";
 import { StrictMode } from "react";
-import reportWebVitals from "utils/reportWebVitals";
 
-const Index = () => {
+const Login = () => {
   return (
     <StrictMode>
       <Layout>
-        <h1>NEXTJS FIREBASE KRIT B.</h1>
+        <LoginPage />
       </Layout>
     </StrictMode>
   );
 };
 
-Index.getInitialProps = async function () {
+Login.getInitialProps = async function () {
   return { sample: "test data" };
 };
-reportWebVitals();
-export default Index;
+
+export default Login;
