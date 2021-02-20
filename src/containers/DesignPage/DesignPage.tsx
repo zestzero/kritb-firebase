@@ -49,7 +49,10 @@ const FormSection = () => {
           <code>type="password"</code>
         </div>
         <div className={styles.row}>
-          <Button text="button" />
+          <Button type="primary" text="button" />
+          <code>type="primary"</code>
+          <Button type="outlined" text="button" />
+          <code>type="outlined"</code>
         </div>
       </Card>
     </>

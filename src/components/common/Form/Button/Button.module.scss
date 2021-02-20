@@ -1,0 +1,17 @@
+.button {
+    border-style: solid;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.primary {
+    color: white;
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+}
+
+.outlined {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
