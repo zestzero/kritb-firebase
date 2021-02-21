@@ -94,7 +94,9 @@
     "start": "next start",
     "test": "node ./node_modules/jest/bin/jest",
     "lint": "eslint --ext .js,.ts .",
-    "deploy": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting"
+    "deploy:functions": "firebase deploy --only functions:nextServer",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:all": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting"
   },
   "eslintConfig": {
     "extends": [
