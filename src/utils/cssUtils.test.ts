@@ -1,4 +1,3 @@
-import "jest";
 import { combinCss } from "./cssUtils";
 
 describe("cssUtils", () => {
