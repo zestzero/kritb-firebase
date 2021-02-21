@@ -1,0 +1,13 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.gridItem {
+    flex: 1;
+}

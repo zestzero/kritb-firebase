@@ -1,7 +1,7 @@
 import styles from "./Input.module.scss";
 
 interface Props {
-  type: "text" | "password";
+  type: "text" | "password" | "email" | "number";
   placeholder?: string;
   defaultValue?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;

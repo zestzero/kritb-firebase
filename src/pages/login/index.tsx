@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout";
+import Layout from "components/common/Layout/Layout";
 import LoginPage from "containers/LoginPage/LoginPage";
 import { StrictMode } from "react";
 

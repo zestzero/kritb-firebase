@@ -1,7 +1,7 @@
 .input {
     color: var(--color-black);
     font-size: 1rem;
-    border-bottom: solid 3px var(--color-primary);
+    border-bottom: solid 2px var(--color-primary);
     border-style: none;
     border-bottom-style: solid;
     background-color: transparent;
@@ -9,6 +9,6 @@
 
     &:focus {
         outline: none;
-        background-color: var(--color-additional);
+        border-bottom: solid 3px var(--color-primary);
     }
 }

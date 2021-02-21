@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout";
+import Layout from "components/common/Layout/Layout";
 import { StrictMode } from "react";
 import reportWebVitals from "utils/reportWebVitals";
 
