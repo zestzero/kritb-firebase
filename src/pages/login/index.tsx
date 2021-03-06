@@ -1,8 +1,13 @@
 import Layout from "components/common/Layout/Layout";
 import LoginPage from "containers/LoginPage/LoginPage";
 import { StrictMode } from "react";
+import { GetServerSideProps } from 'next';
 
-const Login = () => {
+interface Props {
+  sample: string;
+}
+
+const Login = ({ sample }: Props) => {
   return (
     <StrictMode>
       <Layout>
@@ -12,8 +17,12 @@ const Login = () => {
   );
 };
 
-Login.getInitialProps = async function () {
-  return { sample: "test data" };
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      sample: process.env.SITE_NAME,
+    },
+  };
 };
 
 export default Login;

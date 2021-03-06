@@ -17,7 +17,7 @@ const GridRow: React.FC<IGridRow> = (props) => {
     let items: React.ReactNodeArray = [];
     Children.forEach(props.children, (child, index) => {
         const style = props.ratio ? { flex: props.ratio[index] } : {};
-        items.push(<GridItem {...style}>{child}</GridItem>);
+        items.push(<GridItem key={`GridItem-${index}`} {...style}>{child}</GridItem>);
     });
   return (
     <div className={styles.gridRow}>

@@ -1,4 +1,4 @@
-import { combinCss } from 'utils/cssUtils';
+import { combineCss } from 'utils/cssUtils';
 import styles from './Button.module.scss';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 const Button: React.FC<Props> = (props) => {
     return (
-        <button className={combinCss(styles.button, styles[props.type])}>{props.text}</button>
+        <button className={combineCss(styles.button, styles[props.type])}>{props.text}</button>
     )
 };
 

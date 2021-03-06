@@ -2,7 +2,7 @@ import Card from "components/common/Card/Card";
 import Button from "components/common/Form/Button/Button";
 import Input from "components/common/Form/Input/Input";
 import { Grid, GridRow } from "components/common/Grid/Grid";
-import { combinCss } from "utils/cssUtils";
+import { combineCss } from "utils/cssUtils";
 import styles from "./DesignPage.module.scss";
 
 const DesignPage = () => {
@@ -21,7 +21,7 @@ export default DesignPage;
 const ColorSection = () => {
   const renderColor = (value: string) => (
     <div className={styles.row}>
-      <span className={combinCss(styles.box, styles[value])} />
+      <span className={combineCss(styles.box, styles[value])} />
       {value} <code>var(--color-{value})</code>
     </div>
   );
@@ -67,16 +67,16 @@ const GridSection = () => {
         <Grid>
           <code>ratio=[6, 4 ,2]</code>
           <GridRow ratio={[6, 4, 2]}>
-            <div className={combinCss(styles.gridSample, styles.one)}>6</div>
-            <div className={combinCss(styles.gridSample, styles.two)}>4</div>
-            <div className={combinCss(styles.gridSample, styles.three)}>2</div>
+            <div className={combineCss(styles.gridSample, styles.one)}>6</div>
+            <div className={combineCss(styles.gridSample, styles.two)}>4</div>
+            <div className={combineCss(styles.gridSample, styles.three)}>2</div>
           </GridRow>
         </Grid>
         <Grid>
           <code>ratio=[6, 6]</code>
           <GridRow ratio={[6, 6]}>
-            <div className={combinCss(styles.gridSample, styles.one)}>6</div>
-            <div className={combinCss(styles.gridSample, styles.two)}>6</div>
+            <div className={combineCss(styles.gridSample, styles.one)}>6</div>
+            <div className={combineCss(styles.gridSample, styles.two)}>6</div>
           </GridRow>
         </Grid>
       </div>
