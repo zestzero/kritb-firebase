@@ -65,11 +65,18 @@ const GridSection = () => {
       <h2>Grid</h2>
       <div className={styles.row}>
         <Grid>
-          <code>ratio [6, 4 ,2]</code>
+          <code>ratio=[6, 4 ,2]</code>
           <GridRow ratio={[6, 4, 2]}>
             <div className={combinCss(styles.gridSample, styles.one)}>6</div>
             <div className={combinCss(styles.gridSample, styles.two)}>4</div>
             <div className={combinCss(styles.gridSample, styles.three)}>2</div>
+          </GridRow>
+        </Grid>
+        <Grid>
+          <code>ratio=[6, 6]</code>
+          <GridRow ratio={[6, 6]}>
+            <div className={combinCss(styles.gridSample, styles.one)}>6</div>
+            <div className={combinCss(styles.gridSample, styles.two)}>6</div>
           </GridRow>
         </Grid>
       </div>

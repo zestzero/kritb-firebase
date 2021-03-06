@@ -1,5 +1,5 @@
 .input {
-    color: var(--color-black);
+    color: white;
     font-size: 1rem;
     border-bottom: solid 2px var(--color-primary);
     border-style: none;
@@ -9,6 +9,6 @@
 
     &:focus {
         outline: none;
-        border-bottom: solid 3px var(--color-primary);
+        background-color: var(--color-primary);
     }
 }
