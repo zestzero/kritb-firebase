@@ -1,5 +1,4 @@
 .input {
-    color: white;
     font-size: 1rem;
     border-bottom: solid 2px var(--color-primary);
     border-style: none;
@@ -9,6 +8,5 @@
 
     &:focus {
         outline: none;
-        background-color: var(--color-primary);
     }
 }

@@ -20,7 +20,7 @@ const Login = ({ sample }: Props) => {
 export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
-      sample: process.env.SITE_NAME,
+      sample: process.env.SITE_NAME || null,
     },
   };
 };

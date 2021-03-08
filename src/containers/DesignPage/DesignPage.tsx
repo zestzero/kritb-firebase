@@ -33,6 +33,7 @@ const ColorSection = () => {
       {renderColor("secondary")}
       {renderColor("black")}
       {renderColor("additional")}
+      {renderColor("white")}
     </>
   );
 };
@@ -41,7 +42,7 @@ const FormSection = () => {
   return (
     <>
       <h2>Form</h2>
-      <Card>
+      <Card withBg={true}>
         <div className={styles.row}>
           <Input type="email" defaultValue="sample" /> <code>type="email"</code>
         </div>
