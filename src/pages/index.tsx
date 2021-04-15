@@ -1,12 +1,14 @@
-import React from "react";
-import App from "../App";
-import reportWebVitals from '../reportWebVitals';
+import Layout from "components/common/Layout/Layout";
+import { StrictMode } from "react";
+import reportWebVitals from "utils/reportWebVitals";
 
 const Index = () => {
   return (
-    <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <StrictMode>
+      <Layout>
+        <h1>NEXTJS FIREBASE KRIT B.</h1>
+      </Layout>
+    </StrictMode>
   );
 };
 

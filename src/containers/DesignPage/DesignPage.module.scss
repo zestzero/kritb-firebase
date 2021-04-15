@@ -1,0 +1,29 @@
+.box {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: solid 1px #999;
+
+  &.primary { background-color: var(--color-primary); }
+  &.secondary { background-color: var(--color-secondary); }
+  &.black { background-color: var(--color-black); }
+  &.additional { background-color: var(--color-additional); }
+  &.white { background-color: var(--color-white); }
+}
+
+.row {
+  margin: 10px;
+}
+
+.gridSample {
+  text-align: center;
+  &.one {
+    background-color: var(--color-primary);
+  }
+  &.two {
+    background-color: var(--color-secondary);
+  }
+  &.three {
+    background-color: var(--color-additional);
+  }
+}
